@@ -44,7 +44,7 @@ public class MybatisConfiguration extends MybatisAutoConfiguration  {
 
     @Bean
     public SqlSessionFactory sqlSessionFactorys() throws Exception {
-        log.info("-------------------- 重载父类 sqlSessionFactory init ---------------------");
+        log.info("-------------------- 重载父类 sqlSessionFactory 初始化 ---------------------");
         return super.sqlSessionFactory(roundRobinDataSouceProxy());
     }
 
